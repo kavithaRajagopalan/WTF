@@ -11,6 +11,8 @@
 # generated files
 bin/
 gen/
+res/
+.DS_Store
 
 # Local configuration file (sdk path, etc)
 local.properties

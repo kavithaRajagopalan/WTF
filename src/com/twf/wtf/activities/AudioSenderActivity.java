@@ -37,6 +37,8 @@ public class AudioSenderActivity extends Activity {
 
     private void startStreaming() {
         Toast.makeText(this, "Start Streaming Voice", Toast.LENGTH_LONG);
+//        SipManager manager = SipManager.newInstance(this);
+        //SIP maynot be the way to go
     }
 
     @Override
@@ -45,6 +47,5 @@ public class AudioSenderActivity extends Activity {
         setContentView(R.layout.talk);
         timer = (Chronometer) findViewById(R.id.chronometer);
         togglePlayReset();
-
     }
 }

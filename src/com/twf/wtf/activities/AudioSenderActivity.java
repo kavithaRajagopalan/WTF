@@ -29,7 +29,7 @@ public class AudioSenderActivity extends Activity {
         recordButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!timerTask.isCancelled())
+                if (timerTask != null && !timerTask.isCancelled())
                     timerTask.cancelTask();
             }
         });

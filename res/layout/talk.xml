@@ -5,26 +5,30 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-
-    <TextView
-            android:layout_width="202dp"
-            android:layout_height="wrap_content"
-            android:text="Press and Hold Down Volume Rocker To Talk"
-            android:id="@+id/instruction" android:layout_gravity="center"
-            android:layout_centerHorizontal="true" android:layout_alignParentTop="true"
-            android:layout_marginTop="20dp"/>
-
     <Chronometer
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/chronometer" android:layout_gravity="center"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"/>
-    <Button
+
+    <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Start"
+            android:text="Long Press to start and Click to stop"
+            android:id="@+id/instruction" android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_above="@id/chronometer"
+            android:layout_marginTop="50dip"/>
+
+    <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="Start"
+            android:textOff="Stop"
             android:id="@+id/play_reset_button"
+            android:onClick="onToggleClicked"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15dip"
             android:layout_below="@id/chronometer"/>

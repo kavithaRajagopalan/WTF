@@ -1,7 +1,6 @@
 package com.twf.wtf.activities;
 
 import android.content.Context;
-import android.content.IntentFilter;
 import android.net.wifi.WifiManager;
 import android.net.wifi.p2p.WifiP2pDeviceList;
 import android.net.wifi.p2p.WifiP2pManager;
@@ -15,7 +14,6 @@ import static android.net.wifi.p2p.WifiP2pManager.*;
 import static android.os.Looper.getMainLooper;
 
 public class WifiDevices {
-    private final IntentFilter intentFilter = new IntentFilter();
     private Context context;
     private List<Object> activeDevices = new ArrayList<Object>();
 
@@ -66,7 +64,6 @@ public class WifiDevices {
                 break;
             }
         }
-
     }
 
     public List<Object> getActiveDevices() {

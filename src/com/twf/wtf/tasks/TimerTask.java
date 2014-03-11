@@ -13,6 +13,7 @@ public class TimerTask extends AsyncTask {
 
     public void cancelTask() {
         timer.stop();
+        this.cancel(true);
     }
 
     @Override

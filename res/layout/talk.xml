@@ -25,11 +25,12 @@
     <ToggleButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textOn="Start"
-            android:textOff="Stop"
+            android:textOn="Stop"
+            android:textOff="Start"
             android:id="@+id/play_reset_button"
-            android:onClick="onToggleClicked"
+            android:onClick="togglePlayReset"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15dip"
             android:layout_below="@id/chronometer"/>
+
 </RelativeLayout>
